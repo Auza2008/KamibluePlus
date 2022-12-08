@@ -2,26 +2,21 @@
 [![build](https://github.com/kami-blue/client/workflows/gradle_build/badge.svg)](https://github.com/kami-blue/client/actions)
 [![Discord Mine](https://img.shields.io/discord/573954110454366214?label=chat&logo=discord&logoColor=white)](https://discord.gg/KfpqwZB)
 
-## 2021/04/21 This project is now archived indefinitely.
+## 2022/12/8 这个项目诞生了.
 
-All pull requests, issues or any other activity on the repositories of all KAMI Blue organizations will be ignored completely.
+起因是一位群友的话，他说我细，我这暴脾气能忍？
+于是，这个项目诞生了......
 
-Finally this project is in the bin 🗑️
+## 设置开发空间
 
-## Contributing
+您必须先在Windows上安装Git Bash，在Linux / OSX上安装Git
+完成该设置后，请运行以下命令：
 
-Please go to [kamiblue.org/contributing](https://kamiblue.org/contributing) for building instructions.
+git clone https://github.com/kami-blue/client kamiblue
+cd kamiblue
+./scripts/setupWorkspace.sh
+设置工作区后，您可以从Intellij IDEA中运行任务，也可以在KAMI Blue文件夹中运行。
+gradle build./gradlew build
 
-## Thank you
-
-[zeroeightysix](https://github.com/zeroeightysix) for the original [KAMI](https://github.com/zeroeightysix/KAMI)
-
-[ronmamo](https://github.com/ronmamo/) for [Reflections](https://github.com/ronmamo/reflections)
-
-The [Minecraft Forge team](https://github.com/MinecraftForge) for [forge](https://files.minecraftforge.net/)
-
-All the [contributors](https://github.com/kami-blue/client/graphs/contributors), including the ones who will be remembered in comments and in our hearts. This has been a huge community effort and I couldn't have done it without them.
-
-## Star Chart
-
-[![Stargazers over time](https://starchart.cc/kami-blue/client.svg)](https://starchart.cc/kami-blue/client)
+## 结尾
+感谢kamiblue团队的贡献(不感谢kotin,因为我不会!XD)
