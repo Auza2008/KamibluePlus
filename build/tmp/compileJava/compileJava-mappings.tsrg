@@ -1,0 +1,62 @@
+org/kamiblue/client/mixin/client/entity/MixinEntity entityId field_145783_c
+org/kamiblue/client/mixin/client/gui/MixinGuiChat inputField field_146415_a
+org/kamiblue/client/mixin/client/gui/MixinGuiChat historyBuffer field_146410_g
+org/kamiblue/client/mixin/client/gui/MixinGuiChat sentHistoryCursor field_146416_h
+org/kamiblue/client/mixin/client/gui/MixinGuiContainer guiLeft field_147003_i
+org/kamiblue/client/mixin/client/gui/MixinGuiContainer guiTop field_147009_r
+org/kamiblue/client/mixin/client/gui/MixinGuiContainer xSize field_146999_f
+org/kamiblue/client/mixin/client/gui/MixinGuiNewChat chatLines field_146252_h
+org/kamiblue/client/mixin/client/gui/MixinGuiNewChat drawnChatLines field_146253_i
+org/kamiblue/client/mixin/client/MixinMinecraft world field_71441_e
+org/kamiblue/client/mixin/client/MixinMinecraft player field_71439_g
+org/kamiblue/client/mixin/client/MixinMinecraft currentScreen field_71462_r
+org/kamiblue/client/mixin/client/MixinMinecraft gameSettings field_71474_y
+org/kamiblue/client/mixin/client/MixinMinecraft playerController field_71442_b
+org/kamiblue/client/mixin/client/MixinStateImplementation block field_177239_a
+org/kamiblue/client/mixin/client/network/MixinC00Handshake protocolVersion field_149600_a
+org/kamiblue/client/mixin/client/network/MixinC00Handshake ip field_149598_b
+org/kamiblue/client/mixin/client/network/MixinC00Handshake port field_149599_c
+org/kamiblue/client/mixin/client/network/MixinC00Handshake requestedState field_149597_d
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP connection field_71174_a
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP mc field_71159_c
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP lastReportedPosX field_175172_bI
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP lastReportedPosY field_175166_bJ
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP lastReportedPosZ field_175167_bK
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP lastReportedYaw field_175164_bL
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP positionUpdateTicks field_175168_bP
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP lastReportedPitch field_175165_bM
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP serverSprintState field_175171_bO
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP serverSneakState field_175170_bN
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP prevOnGround field_184841_cd
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP autoJumpEnabled field_189811_cr
+org/kamiblue/client/mixin/client/render/MixinFontRenderer FONT_HEIGHT field_78288_b
+org/kamiblue/client/mixin/client/render/MixinFontRenderer posX field_78295_j
+org/kamiblue/client/mixin/client/render/MixinFontRenderer posY field_78296_k
+org/kamiblue/client/mixin/client/render/MixinFontRenderer alpha field_78305_q
+org/kamiblue/client/mixin/client/render/MixinFontRenderer red field_78291_n
+org/kamiblue/client/mixin/client/render/MixinFontRenderer green field_78306_p
+org/kamiblue/client/mixin/client/render/MixinFontRenderer blue field_78292_o
+org/kamiblue/client/mixin/client/render/MixinLayerCape playerRenderer field_177167_a
+org/kamiblue/client/mixin/client/render/MixinLayerElytra renderPlayer field_188356_b
+org/kamiblue/client/mixin/client/render/MixinLayerElytra modelElytra field_188357_c
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedHead field_78116_c
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedBody field_78115_e
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedRightArm field_178723_h
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedLeftArm field_178724_i
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedRightLeg field_178721_j
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedLeftLeg field_178722_k
+org/kamiblue/client/mixin/client/render/MixinModelBiped leftArmPose field_187075_l
+org/kamiblue/client/mixin/client/render/MixinModelBiped rightArmPose field_187076_m
+org/kamiblue/client/mixin/client/render/MixinModelBiped bipedHeadwear field_178720_f
+org/kamiblue/client/mixin/client/render/MixinViewFrustum renderChunks field_178164_f
+org/kamiblue/client/mixin/client/render/MixinViewFrustum countChunksX field_178165_d
+org/kamiblue/client/mixin/client/render/MixinViewFrustum countChunksY field_178168_c
+org/kamiblue/client/mixin/client/render/MixinViewFrustum countChunksZ field_178166_e
+org/kamiblue/client/mixin/client/MixinMinecraft clickMouse ()V func_147116_af
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP isCurrentViewEntity ()Z func_175160_A
+org/kamiblue/client/mixin/client/player/MixinEntityPlayerSP updateAutoJump (FF)V func_189810_i
+org/kamiblue/client/mixin/client/render/MixinFontRenderer renderStringAtPos (Ljava/lang/String;Z)V func_78255_a
+org/kamiblue/client/mixin/client/render/MixinModelBiped getMainHand (Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/EnumHandSide; func_187072_a
+org/kamiblue/client/mixin/client/render/MixinModelBiped getArmForSide (Lnet/minecraft/util/EnumHandSide;)Lnet/minecraft/client/model/ModelRenderer; func_187074_a
+org/kamiblue/client/mixin/client/render/MixinRenderPlayer setModelVisibilities (Lnet/minecraft/client/entity/AbstractClientPlayer;)V func_177137_d
+org/kamiblue/client/mixin/client/render/MixinViewFrustum getBaseCoordinate (III)I func_178157_a
