@@ -24,6 +24,7 @@ internal object FindHome : Module(name = "FindHome", description = "only work wh
             mc.player.rotationYaw = 0F
             mc.player.rotationYawHead = 0F
             time.reset()
+            time2.reset()
         }
         safeListener<PlayerMoveEvent> {
             if (time.hasTimePassed(24000L)) {
