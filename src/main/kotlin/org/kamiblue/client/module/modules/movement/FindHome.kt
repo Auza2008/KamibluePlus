@@ -7,6 +7,7 @@ import org.kamiblue.client.event.events.PlayerMoveEvent
 import org.kamiblue.client.module.Category
 import org.kamiblue.client.module.Module
 import org.kamiblue.client.module.modules.player.LagNotifier
+import org.kamiblue.client.module.modules.player.ViewLock
 import org.kamiblue.client.util.MSTimer
 import org.kamiblue.client.util.threads.safeListener
 import org.kamiblue.event.listener.listener
@@ -14,16 +15,15 @@ import org.kamiblue.event.listener.listener
 internal object FindHome : Module(name = "FindHome", description = "Find a base(Maybe)", category = Category.MOVEMENT) {
     //哼哼~啊啊啊啊啊啊啊啊！！！！！
     private var walkMode by setting("AutoWalk", true)
-  //  private var speed by setting("Speed", 2.0, 1.0..5.0, 0.2)
+    private var speed by setting("RotSpeed", 2, 1..5, 1)
 
     private var i = 90
     private var time = MSTimer()
     private var time2 = MSTimer()
+    private var yawSnap = 0
 
     init {
         onEnable {
-            mc.player.rotationYaw = 0F
-            mc.player.rotationYawHead = 0F
             time.reset()
             time2.reset()
         }
@@ -34,13 +34,15 @@ internal object FindHome : Module(name = "FindHome", description = "Find a base(
             }
         }
         safeListener<PlayerMoveEvent> {
-            if (time.hasTimePassed(24000L)) {
+            var timeOutSpeed = ((48 / speed) * 1000)
+            var resetSpeed = ((timeOutSpeed * 3) + 100)
+            if (time.hasTimePassed(timeOutSpeed.toLong())) {
                 mc.player.rotationYaw = mc.player.rotationYaw + i
                 mc.player.rotationYawHead = mc.player.rotationYawHead + i
                 time.reset()
             }
 
-            if (time2.hasTimePassed(72100L)) {
+            if (time2.hasTimePassed(resetSpeed.toLong())) {
                 time.reset()
                 time2.reset()
             }
@@ -53,10 +55,5 @@ internal object FindHome : Module(name = "FindHome", description = "Find a base(
                 it.movementInput.moveForward = 1.0f
             }
         }
-    }
-
-    private fun speedGet() {
-        //开发中
-
     }
 }
